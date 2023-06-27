@@ -1,6 +1,7 @@
 //import React from "react"
-import styles from './style'
-import {  Navbar,
+import styles from "./style";
+import {
+  Navbar,
   Billing,
   CardDeal,
   Business,
@@ -10,37 +11,37 @@ import {  Navbar,
   Footer,
   Testimonials,
   Hero,
-} from './components'
+} from "./components";
 
 const App = () => {
   return (
-      <div className="bg-primary w-full overflow-hidden">
-        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-          <div className={`${styles.boxWidth}`}>
-            <Navbar/>
-          </div>
+    <div className="bg-primary w-full overflow-hidden">
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar />
         </div>
-        <div className={`bg-primary ${styles.flexStart}`}>
-          <div className={`${styles.boxWidth}`}>
-          <Hero/>
-          </div>
-        </div>
-        <div className={`bg-primary ${styles.flexStart}`}>
-              <div className={`${styles.boxWidth}`}>
-                  <Stats/>
-  <Billing/>
-          <CardDeal/>
-          <Business/>
-          <Client/>
-          <Cta/>
-          <Footer/>
-          <Testimonials/>
-                  
-          </div>
-        </div>
-
       </div>
-    )
-}
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero />
+        </div>
+      </div>
+      <div className={`bg-primary ${styles.flexCenter} ${styles.paddingX}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Stats />
+          <Business />
 
-export default App
+          <Billing />
+          <CardDeal />
+          <Testimonials />
+          <Client />
+
+          <Cta />
+          <Footer />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default App;
